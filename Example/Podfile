@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RouteCenter_Example' do
+  pod 'RouteCenter', :path => '../'
+
+  target 'RouteCenter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
