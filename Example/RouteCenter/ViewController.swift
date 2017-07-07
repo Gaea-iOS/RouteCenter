@@ -30,7 +30,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clickButton(sender: Any) {
-        if let url = URL(string: "amateur://items/568?nickname=jerry") {
+        let id = 9_223_372_036_854_775_805
+        if let url = URL(string: "amateur://items/\(id)?nickname=jerry") {
             UIApplication.shared.openURL(url)
         }
     }

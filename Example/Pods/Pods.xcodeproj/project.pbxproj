@@ -11,6 +11,7 @@
 		0D1F5A4C34894626A6105C5407F975EB /* URLMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E3823986C9ADCEBF9C3BA41F104BC5 /* URLMatcher.swift */; };
 		0F524A4F05C74FBF066FA37C6CCCD287 /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B76D10A2AEC7BAC45CFC26AC5432A /* URLConvertible.swift */; };
 		1B5DFA0207E43B6B28BDBE4D6D8DA257 /* RouteCenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCDD69CF17E38672F537DF80BF433EE /* RouteCenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B81D43B1F0F7F7200F42319 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B81D4391F0F7EE600F42319 /* String+Extension.swift */; };
 		1E863A8421C3983267E15DCC1D15E3ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51593FCE2E798A9984753FCDD8170C7C /* Foundation.framework */; };
 		1EB0E69A9130A9F5C5FB6C72C80C793F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51593FCE2E798A9984753FCDD8170C7C /* Foundation.framework */; };
 		1FA0A24DE96E57F8D4CFAAC2295668B2 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2FA1F8914BE93F6459E1EC5FD58AC1 /* Navigation.swift */; };
@@ -56,25 +57,26 @@
 
 /* Begin PBXFileReference section */
 		0199F761EE7861C0BFFF34747C0D7437 /* Pods-RouteCenter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RouteCenter_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		032B5A4D94828D37C66B3E9DFCA103B4 /* Pods_RouteCenter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RouteCenter_Example.framework; path = "Pods-RouteCenter_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		032B5A4D94828D37C66B3E9DFCA103B4 /* Pods_RouteCenter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RouteCenter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B8FFD10780F85E8482F19775FE3B61A /* Pods-RouteCenter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RouteCenter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		10379A9F518BEEE1B2CDFA3F39343638 /* URLNavigator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = URLNavigator.modulemap; sourceTree = "<group>"; };
+		10379A9F518BEEE1B2CDFA3F39343638 /* URLNavigator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = URLNavigator.modulemap; sourceTree = "<group>"; };
 		1133A0E2A11DC245F2416644E2A1D4E8 /* Pods-RouteCenter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RouteCenter_Tests-umbrella.h"; sourceTree = "<group>"; };
 		1795548206C8F2462D145310990537CD /* Pods-RouteCenter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RouteCenter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1AEF86AA3D38B531B7A551F35AD06420 /* Pods-RouteCenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RouteCenter_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1B81D4391F0F7EE600F42319 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		1C9B76D10A2AEC7BAC45CFC26AC5432A /* URLConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLConvertible.swift; path = Sources/URLConvertible.swift; sourceTree = "<group>"; };
-		1D59BB87DA65785CAB25DBA0A987A90D /* RouteCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RouteCenter.framework; path = RouteCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D59BB87DA65785CAB25DBA0A987A90D /* RouteCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RouteCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EDD26E81BB02CEB49A147BB911CF61A /* Pods-RouteCenter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RouteCenter_Tests-dummy.m"; sourceTree = "<group>"; };
 		21D1F0CB27524A12D08ADE6C82072862 /* Pods-RouteCenter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RouteCenter_Example-frameworks.sh"; sourceTree = "<group>"; };
 		2C2A3ECB0925AB3E52C5DCD3870CE2C5 /* Pods-RouteCenter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RouteCenter_Example-dummy.m"; sourceTree = "<group>"; };
 		41A59E1C569C2797C33EE2740E12BFF9 /* URLNavigator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URLNavigator-umbrella.h"; sourceTree = "<group>"; };
-		4888AF1B824AF699FE110AEE215CC61C /* Pods_RouteCenter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RouteCenter_Tests.framework; path = "Pods-RouteCenter_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4888AF1B824AF699FE110AEE215CC61C /* Pods_RouteCenter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RouteCenter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4615F3CC9CA33797680DAA1E222712 /* UIViewController+TopMostViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+TopMostViewController.swift"; path = "Sources/UIViewController+TopMostViewController.swift"; sourceTree = "<group>"; };
 		50E4DE361DB899F5B6ED569DF11DC89C /* Pods-RouteCenter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RouteCenter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		51593FCE2E798A9984753FCDD8170C7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		51C4D8A66B83C1100A9E437DEAC4BCBB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53AF1AD31D67B2C6B5C82D58B922AC1E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		53E2539B700AD80C0428DE7B25A7079B /* Pods-RouteCenter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RouteCenter_Tests.modulemap"; sourceTree = "<group>"; };
+		53E2539B700AD80C0428DE7B25A7079B /* Pods-RouteCenter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RouteCenter_Tests.modulemap"; sourceTree = "<group>"; };
 		5D6C095ECB0001477055A6E916F0D508 /* Pods-RouteCenter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RouteCenter_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		5E23EDDF2D756A4E384BA889A8E08F61 /* RouteCenter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RouteCenter-prefix.pch"; sourceTree = "<group>"; };
 		6ABF637649EA289F3FCE5CD87F7DE713 /* URLNavigator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "URLNavigator-dummy.m"; sourceTree = "<group>"; };
@@ -82,8 +84,8 @@
 		800D8A41144BB3E2459FA7DABE2B7365 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8424F05AD0139C29542E3460F5E5B7BD /* Pods-RouteCenter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RouteCenter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		876B264E113E8A0CFADEBCEF7D5FDD38 /* RouteCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RouteCenter.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9588A9403EE119C0477F3FCC724C84CE /* RouteCenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RouteCenter.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9588A9403EE119C0477F3FCC724C84CE /* RouteCenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RouteCenter.modulemap; sourceTree = "<group>"; };
 		95E871B5D9188F40621697B27CD3C897 /* URLNavigator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URLNavigator-prefix.pch"; sourceTree = "<group>"; };
 		9CCDD69CF17E38672F537DF80BF433EE /* RouteCenter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RouteCenter-umbrella.h"; sourceTree = "<group>"; };
 		A34AAE28023D798DD7A33909CC15FDA8 /* Pods-RouteCenter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RouteCenter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,13 +95,13 @@
 		BF04FB0B6A13094511B9D9E3174213B8 /* Pods-RouteCenter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RouteCenter_Example-resources.sh"; sourceTree = "<group>"; };
 		C3FC34C09209C3BF87EF48087D5D53BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C5E13A223699E85CCFA1B229691C77E5 /* Pods-RouteCenter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RouteCenter_Tests-resources.sh"; sourceTree = "<group>"; };
-		C9513A7241A38243D1635A70B276743F /* Pods-RouteCenter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RouteCenter_Example.modulemap"; sourceTree = "<group>"; };
+		C9513A7241A38243D1635A70B276743F /* Pods-RouteCenter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RouteCenter_Example.modulemap"; sourceTree = "<group>"; };
 		CD904F7739F382F82A2AA97A538E22AD /* Pods-RouteCenter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RouteCenter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D4E3823986C9ADCEBF9C3BA41F104BC5 /* URLMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLMatcher.swift; path = Sources/URLMatcher.swift; sourceTree = "<group>"; };
 		D5B6331AC538D940F8B47733DA8BC7B3 /* Pods-RouteCenter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RouteCenter_Example-umbrella.h"; sourceTree = "<group>"; };
 		E0E4A86D5697638FFD71EA74D29D9917 /* RouteCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RouteCenter.xcconfig; sourceTree = "<group>"; };
 		E3772FD9A1005D19997030F1AC58EF34 /* RouteCenter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RouteCenter-dummy.m"; sourceTree = "<group>"; };
-		EF12609E77142B74C41C748A4ED94B9D /* URLNavigator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = URLNavigator.framework; path = URLNavigator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF12609E77142B74C41C748A4ED94B9D /* URLNavigator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URLNavigator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8503DB773D23D611D1E913D3C770AE0 /* URLNavigator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = URLNavigator.xcconfig; sourceTree = "<group>"; };
 		FF8F1CD00C3FCC9148599386E180934F /* URLNavigator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLNavigator.swift; path = Sources/URLNavigator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,7 +185,6 @@
 			children = (
 				ADDFE4F50436B2E75F7601DB34E25989 /* Classes */,
 			);
-			name = RouteCenter;
 			path = RouteCenter;
 			sourceTree = "<group>";
 		};
@@ -260,8 +261,8 @@
 			isa = PBXGroup;
 			children = (
 				876B264E113E8A0CFADEBCEF7D5FDD38 /* RouteCenter.swift */,
+				1B81D4391F0F7EE600F42319 /* String+Extension.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -294,7 +295,6 @@
 				FF8F1CD00C3FCC9148599386E180934F /* URLNavigator.swift */,
 				0E9D62E020D5FB5EE08463E1F9A67E04 /* Support Files */,
 			);
-			name = URLNavigator;
 			path = URLNavigator;
 			sourceTree = "<group>";
 		};
@@ -432,6 +432,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					B83EB5E229C1B1AD6718F361E0835EE1 = {
+						LastSwiftMigration = 0830;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -483,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B81D43B1F0F7F7200F42319 /* String+Extension.swift in Sources */,
 				1FA0A24DE96E57F8D4CFAAC2295668B2 /* Navigation.swift in Sources */,
 				82814EEF2434FA33BE086ACBA70FE6E6 /* UIViewController+TopMostViewController.swift in Sources */,
 				0F524A4F05C74FBF066FA37C6CCCD287 /* URLConvertible.swift in Sources */,
@@ -674,6 +680,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1AEF86AA3D38B531B7A551F35AD06420 /* Pods-RouteCenter_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -712,6 +719,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 50E4DE361DB899F5B6ED569DF11DC89C /* Pods-RouteCenter_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

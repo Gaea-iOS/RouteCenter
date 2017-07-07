@@ -19,10 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        RouteCenter.default.map(AppRoutePattern(pattern: "/items/<int:id>")) { (url, parameters) -> Bool in
-            guard let id = parameters["id"] as? Int else {return false}
+        RouteCenter.default.map(AppRoutePattern(pattern: "/items/<id>")) { (url, parameters) -> Bool in
+            guard let id = parameters["id"]?.intValue else {return false}
             let controller = AmateurViewController()
-            let nickname = parameters["nickname"] as? String
+            let nickname = parameters["nickname"]
             controller.title = "amateur item \(id) \(nickname!)"
             UIViewController.topMost?.navigationController?.pushViewController(controller, animated: true)
             return true
