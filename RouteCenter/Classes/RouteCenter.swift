@@ -45,22 +45,8 @@ public class RouteCenter {
                 return result
             })
             let newParameters: [String: String] = parameters.reduce([:], { result, turple in
-                var newValue: String? {
-                    switch turple.value {
-                    case let p as UUID:
-                        return p.uuidString
-                    case let p as String:
-                        return p
-                    case let p as Int:
-                        return String(p)
-                    case let p as Float:
-                        return String(p)
-                    default:
-                        return nil
-                    }
-                }
                 var newResult = result
-                newResult[turple.key] = newValue
+                newResult[turple.key] = turple.value as? String
                 return newResult
             })
             

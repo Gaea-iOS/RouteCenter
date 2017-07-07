@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RouteCenter'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of RouteCenter.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/wangxiaotao/RouteCenter'
+  s.homepage         = 'https://github.com/Gaea-iOS/RouteCenter'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wangxiaotao' => '445242970@qq.com' }
-  s.source           = { :git => 'https://github.com/wangxiaotao/RouteCenter.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Gaea-iOS/RouteCenter.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
