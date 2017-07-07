@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B81D4381F0F6CDA00F42319 /* AmateurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B81D4371F0F6CDA00F42319 /* AmateurViewController.swift */; };
 		335D5EAB71455F0C702BDBBE /* Pods_RouteCenter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72F2B7A7F7FF12C8EB7615F /* Pods_RouteCenter_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -28,7 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		009EF9AB2C52B9B517676935 /* RouteCenter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RouteCenter.podspec; path = ../RouteCenter.podspec; sourceTree = "<group>"; };
+		009EF9AB2C52B9B517676935 /* RouteCenter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RouteCenter.podspec; path = ../RouteCenter.podspec; sourceTree = "<group>"; };
+		1B81D4371F0F6CDA00F42319 /* AmateurViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmateurViewController.swift; sourceTree = "<group>"; };
 		54A60E61DDF8355E9782C5F4 /* Pods-RouteCenter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteCenter_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RouteCenter_Tests/Pods-RouteCenter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RouteCenter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouteCenter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,10 +42,10 @@
 		607FACE51AFB9204008FA782 /* RouteCenter_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouteCenter_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		80CBDD52DA8A0BFF6A57140F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		80CBDD52DA8A0BFF6A57140F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9324199663DB69BC3D84C882 /* Pods-RouteCenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteCenter_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RouteCenter_Example/Pods-RouteCenter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B1687AD18B4A1ACD4D129B1A /* Pods-RouteCenter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteCenter_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RouteCenter_Example/Pods-RouteCenter_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B51FEF33045104F3EA59C596 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B51FEF33045104F3EA59C596 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CCB6C37E3D0E5F42272A10B3 /* Pods-RouteCenter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteCenter_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RouteCenter_Tests/Pods-RouteCenter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F5CFF9075FBB06FDF514E080 /* Pods_RouteCenter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RouteCenter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72F2B7A7F7FF12C8EB7615F /* Pods_RouteCenter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RouteCenter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +101,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				1B81D4371F0F6CDA00F42319 /* AmateurViewController.swift */,
 			);
 			name = "Example for RouteCenter";
 			path = RouteCenter;
@@ -363,6 +366,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				1B81D4381F0F6CDA00F42319 /* AmateurViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,19 @@
+PODS:
+  - RouteCenter (0.1.0):
+    - URLNavigator (~> 1.2.2)
+  - URLNavigator (1.2.2)
+
+DEPENDENCIES:
+  - RouteCenter (from `../`)
+
+EXTERNAL SOURCES:
+  RouteCenter:
+    :path: ../
+
+SPEC CHECKSUMS:
+  RouteCenter: cf874ac6d1d89211a6ff79941bc1fe616547d205
+  URLNavigator: 6d21156174d65dfbdbf93a210cd2760c33ac62eb
+
+PODFILE CHECKSUM: eeafdd8c2fe369bffdcd9d92267d7f39a8f27c35
+
+COCOAPODS: 1.2.1
