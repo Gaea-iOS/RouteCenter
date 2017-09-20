@@ -28,6 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return true
         }
         
+        RouteCenter.default.map(AppRoutePattern(pattern: "/images")) { (url, parameters) -> Bool in
+            guard let keys = parameters["image_keys"] as? [String] else {return false}
+            let index = parameters["index"]?.intValue ?? 0
+            return true
+        }
+        
         return true
     }
 

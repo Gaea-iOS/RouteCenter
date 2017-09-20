@@ -30,10 +30,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clickButton(sender: Any) {
-        let id = 9_223_372_036_854_775_805
-        if let url = URL(string: "amateur://items/\(id)?nickname=jerry") {
-            UIApplication.shared.openURL(url)
-        }
+//        let id = 9_223_372_036_854_775_805
+//        if let url = URL(string: "amateur://items/\(id)?nickname=jerry") {
+//            UIApplication.shared.openURL(url)
+//        }
+        
+        let d = URL(string: "amateur://images?index=5&image_keys[]=eiadjfj1&image_keys[]=eiadjfj2&image_keys[]=eiadjfj3")!
+        UIApplication.shared.openURL(d)
     }
 
     override func didReceiveMemoryWarning() {

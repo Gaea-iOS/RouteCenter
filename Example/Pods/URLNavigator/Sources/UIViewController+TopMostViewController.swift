@@ -20,6 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+#if os(iOS) || os(tvOS)
 import UIKit
 
 extension UIViewController {
@@ -41,6 +42,11 @@ extension UIViewController {
 
   /// Returns the top most view controller from given view controller's stack.
   open class func topMost(of viewController: UIViewController?) -> UIViewController? {
+    // presented view controller
+    if let presentedViewController = viewController?.presentedViewController {
+      return self.topMost(of: presentedViewController)
+    }
+
     // UITabBarController
     if let tabBarController = viewController as? UITabBarController,
       let selectedViewController = tabBarController.selectedViewController {
@@ -53,9 +59,10 @@ extension UIViewController {
       return self.topMost(of: visibleViewController)
     }
 
-    // presented view controller
-    if let presentedViewController = viewController?.presentedViewController {
-      return self.topMost(of: presentedViewController)
+    // UIPageController
+    if let pageViewController = viewController as? UIPageViewController,
+      pageViewController.viewControllers?.count == 1 {
+      return self.topMost(of: pageViewController.viewControllers?.first)
     }
 
     // child view controller
@@ -69,3 +76,4 @@ extension UIViewController {
   }
 
 }
+#endif

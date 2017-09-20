@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'RouteCenter_Example' do
   pod 'RouteCenter', :path => '../'
+#  pod 'MiPushSDK', :git => 'https://github.com/Gaea-iOS/MiPushSDK.git', :tag => '2.2.6'
 
   target 'RouteCenter_Tests' do
     inherit! :search_paths
