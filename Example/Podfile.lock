@@ -1,19 +1,23 @@
 PODS:
   - RouteCenter (0.5.0):
-    - URLNavigator (~> 1.2)
-  - URLNavigator (1.2.5)
+    - URLNavigator (~> 2.0)
+  - URLNavigator (2.0.5)
 
 DEPENDENCIES:
   - RouteCenter (from `../`)
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - URLNavigator
+
 EXTERNAL SOURCES:
   RouteCenter:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  RouteCenter: fd9ade29dd36284200e3ca9ca03cc1e4508e5487
-  URLNavigator: 96151fe611827a2ade6643a536888afe616e6edb
+  RouteCenter: 428b28ec0919fc43b895980f7285ddd8f75f0c9d
+  URLNavigator: b7bdd352cc07f4f745547807a3ca2a82980a6cea
 
 PODFILE CHECKSUM: cb31632acff0b29d20aa3d8851d7846c72fc5878
 
-COCOAPODS: 1.3.0.rc.1
+COCOAPODS: 1.5.0

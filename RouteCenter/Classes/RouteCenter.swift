@@ -30,6 +30,8 @@ public class RouteCenter {
     
     public static let `default` = RouteCenter()
     
+    private let navigator = Navigator()
+    
     private init() {}
     
     public func add<T: Routable>(_ routable: T.Type) {
@@ -38,7 +40,7 @@ public class RouteCenter {
     
     public func map(_ routePattern: RoutePatternConvertible, handler: @escaping (_ url: String, _ parameters: [String: String]) -> Bool) {
         
-        Navigator.map(routePattern.routePattern) { (urlConvertible, values) -> Bool in
+        navigator.handle(routePattern.routePattern) { (urlConvertible, values, context) -> Bool in
             let parameters = urlConvertible.queryParameters.reduce(values, {
                 var result = $0
                 result.updateValue($1.value, forKey: $1.key)
@@ -49,16 +51,15 @@ public class RouteCenter {
                 newResult[turple.key] = turple.value as? String
                 return newResult
             })
-            
             return handler(urlConvertible.urlStringValue, newParameters)
         }
     }
     
     public func route(url: String) -> Bool {
-        return Navigator.open(url)
+        return navigator.open(url)
     }
     
     public func route(url: URL) -> Bool {
-        return Navigator.open(url)
+        return navigator.open(url)
     }
 }

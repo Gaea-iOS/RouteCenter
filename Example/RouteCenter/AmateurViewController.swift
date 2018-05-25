@@ -7,6 +7,21 @@
 //
 
 import UIKit
+import RouteCenter
+
+extension AmateurViewController: Routable {
+    static var routePattern: RoutePatternConvertible {
+        return AppRoutePattern(pattern: "/items/<id>")
+    }
+    static func route(url: String, parameters: [String : String]) -> Bool {
+        guard let id = parameters["id"]?.intValue else {return false}
+        let controller = AmateurViewController()
+        let nickname = parameters["nickname"]
+        controller.title = "amateur item \(id) \(nickname!)"
+        UIViewController.topMost?.navigationController?.pushViewController(controller, animated: true)
+        return true
+    }
+}
 
 class AmateurViewController: UIViewController {
 

@@ -19,20 +19,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        RouteCenter.default.map(AppRoutePattern(pattern: "/items/<id>")) { (url, parameters) -> Bool in
-            guard let id = parameters["id"]?.intValue else {return false}
-            let controller = AmateurViewController()
-            let nickname = parameters["nickname"]
-            controller.title = "amateur item \(id) \(nickname!)"
-            UIViewController.topMost?.navigationController?.pushViewController(controller, animated: true)
-            return true
-        }
+        RouteCenter.default.add(AmateurViewController.self)
         
-        RouteCenter.default.map(AppRoutePattern(pattern: "/images")) { (url, parameters) -> Bool in
-            guard let keys = parameters["image_keys"] as? [String] else {return false}
-            let index = parameters["index"]?.intValue ?? 0
-            return true
-        }
+//        RouteCenter.default.map(AppRoutePattern(pattern: "/items/<id>")) { (url, parameters) -> Bool in
+//            guard let id = parameters["id"]?.intValue else {return false}
+//            let controller = AmateurViewController()
+//            let nickname = parameters["nickname"]
+//            controller.title = "amateur item \(id) \(nickname!)"
+//            UIViewController.topMost?.navigationController?.pushViewController(controller, animated: true)
+//            return true
+//        }
+//
+//        RouteCenter.default.map(AppRoutePattern(pattern: "/images")) { (url, parameters) -> Bool in
+//            guard let keys = parameters["image_keys"] as? String else {return false}
+//            let index = parameters["index"]?.intValue ?? 0
+//            print("jump to controller images, keys = \(keys), index = \(index)")
+//            return true
+//        }
         
         return true
     }
